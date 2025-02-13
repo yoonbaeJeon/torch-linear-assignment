@@ -13,19 +13,12 @@
 Batch computation of the linear assignment problem on GPU.
 
 ## Install
-Build and install via PyPI (source distribution):
-```bash
-pip install torch-linear-assignment
-```
-
 Build and install from Git repository:
+> With old version pytorch(<= 1.10.0)
 ```bash
-pip install .
-```
-
-Building in an isolated environment may use a different PyTorch version. To match the current environment and reduce the disk usage, apply the following flag:
-```bash
-pip install --no-build-isolation torch-linear-assignment
+git clone git@github.com:yoonbaeJeon/torch-linear-assignment.git
+cd torch-linear-assignment
+pip install --no-build-isolation --no-cache-dir .
 ```
 
 When building with CUDA, make sure NVCC has the same CUDA version as PyTorch.
